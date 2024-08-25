@@ -49,6 +49,7 @@ button{
     margin: 15px;
     transition: all .4s ease;
     border-bottom: 1px solid black;
+    direction: rtl;
 }
 .body .task:hover{
     box-shadow: 0 3px 10px rgb(42, 42, 42);
@@ -65,12 +66,24 @@ button{
     display: flex;
     justify-content: space-between;
 }
-@media (max-width:500px) {
+@media (max-width:590px) {
     .body .task .first{
         width: 60%;
     }
     .body .task .second{
         width: 35%;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+@media (max-width:415px) {
+    .body .task .first{
+        width: 50%;
+    }
+    .body .task .second{
+        width: 45%;
+        display: flex;
+        justify-content: space-between;
     }
 }
 .body .second .del{

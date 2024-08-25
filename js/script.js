@@ -22,7 +22,9 @@ let tasks = [
             `
                 <div class="task ${task.isDone ?'task-done' :''}">
                     <div class="first">
-                        <h1>${task.title}</h1>
+                        <div id="first">
+                            <h1>${task.title}</h1>
+                        </div>
                         <div class="date"><i class="fa-solid fa-calendar-days"></i> ${task.date}</div>
                     </div>
                     <div class="second">
