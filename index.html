@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div id="prompt-overlay"></div>
+
+    <div id="custom-prompt">
+        <p id="prompt-message">أهلا بك</p>
+        <input type="text" id="prompt-input" placeholder="أدخل المهمة التالية">
+        <button class="btn" onclick="submitPrompt()">إضافة</button>
+        <button class="btn1" onclick="cancelPrompt()">إلغاء</button>
+    </div>
+    <div class="project">
+        <div class="all">
+            <div class="header">
+                <h2>مهامي</h2>
+                <button id="add"><i class="fa-solid fa-plus"></i></button>
+            </div>
+            <div id="tasks" class="body">
+                <div class="task">
+                    <div class="first">
+                        <h1>قراءه كتاب</h1>
+                        <div class="date"><i class="fa-solid fa-calendar-days"></i> 10/8/2024</div>
+                    </div>
+                    <div class="second">
+                        <button id="delete" class="del"><i class="fa-solid fa-trash trash"></i></button>
+                        <button id="done" class="done"><i class="fa-solid fa-check check"></i></button>
+                        <button id="edit" class="edit"><i class="fa-solid fa-pen pen"></i></button>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+
+    <script src="js/all.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
