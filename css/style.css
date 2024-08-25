@@ -65,6 +65,14 @@ button{
     display: flex;
     justify-content: space-between;
 }
+@media (max-width:500px) {
+    .body .task .first{
+        width: 60%;
+    }
+    .body .task .second{
+        width: 35%;
+    }
+}
 .body .second .del{
     background-color: rgb(153, 29, 29);
 }
